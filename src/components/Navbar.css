@@ -13,6 +13,7 @@
 
 .navbar_container h2{
     color: #149CEA;
+    cursor: pointer;
 }
 
 .navbar_container ul{

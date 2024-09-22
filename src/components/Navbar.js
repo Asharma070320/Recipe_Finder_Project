@@ -7,7 +7,7 @@ const Navbar = () => {
     const navi = useNavigate();
   return (
     <div className="navbar_container">
-      <h2><i> Recipe Finder </i></h2>
+      <h2><i onClick={() => navi('/')}> Recipe Finder </i></h2>
       <ul>
         <a href="">
           <li onClick={() => navi('/')}>Home</li>
