@@ -1,0 +1,59 @@
+.exploreMenu_conatiner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mini_explore{
+    width: 80%;
+    /* border: 2px solid; */
+}
+.mini_explore .text{
+    margin-top: 18px;
+    color: rgb(128,128,128);
+}
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+    overflow-x: scroll;
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    position: relative;
+    /* border: 2px solid; */
+}
+.images::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+/* Hide the scrollbar for Firefox */
+.images {
+    scrollbar-width: none; /* Firefox */
+}
+.img_name{
+    text-align: center;
+}
+.images .img_name img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 425px){
+    .mini_explore h1{
+        font-size: 1.4rem;
+    }
+    .text p {
+        font-size: 0.9rem;
+    }
+    .images .img_name img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}

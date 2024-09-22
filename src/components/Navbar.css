@@ -1,0 +1,105 @@
+.navbar_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    /* border: 2px solid; */
+    padding: 1.5rem 0rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.navbar_container h2{
+    color: #149CEA;
+}
+
+.navbar_container ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-weight: 500;
+}
+.navbar_container a{
+   color: black;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar_container a li{
+    font-size: 1.1rem;
+}
+
+.navbar_container .signUp{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.navbar_container .signUp .icon{
+    font-size: 2rem;
+}
+
+/* From Uiverse.io by Navarog21 */ 
+.signup_btn {
+    width: 10rem;
+    position: relative;
+    height: 2.5em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .signup_btn:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  .signup_btn:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
+ 
+
+  @media screen and (max-width: 768px){
+    .navbar_container{
+        justify-content: space-around;
+    }
+    
+    .navbar_container ul{
+        display: none;
+    }
+    .navbar_container .signUp{
+        gap: 1rem;
+    }
+    
+  }
+
+  @media screen and (max-width: 555px){
+   .navbar_container h2{
+    font-size: 1.2rem;
+   }
+   
+   .navbar_container .signUp .icon{
+    font-size: 1.6rem;
+}
+    /* From Uiverse.io by Navarog21 */ 
+    .signup_btn {
+        width: 6em;
+      }
+      .navbar_container .signUp{
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+    }
+  }
+
+  @media screen and (max-width: 425px){
+    
+    .signup_btn {
+        width: 5em;
+      }
+  }
