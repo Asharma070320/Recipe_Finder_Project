@@ -12,6 +12,8 @@
     margin-top: 18px;
     color: rgb(128,128,128);
 }
+
+
 .images{
     width: 100%;
     display: flex;
@@ -42,6 +44,9 @@
     cursor: pointer;
 }
 
+.food_name{
+    font-weight: 500;
+}
 
 @media screen and (max-width: 425px){
     .mini_explore h1{

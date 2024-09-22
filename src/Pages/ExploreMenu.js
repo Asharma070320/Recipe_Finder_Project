@@ -73,16 +73,16 @@ const ExploreMenu = () => {
         let scrollAmount = 0;
 
         const scroll = () => {
-            scrollAmount += 1; // Adjust speed here
-            scrollContainer.scrollLeft = scrollAmount;
-            if (scrollAmount >= scrollContainer.scrollWidth / 2) {
-                scrollAmount = 0; // Reset to loop
+            scrollContainer.scrollLeft -= 1; // Move to the left
+            if (scrollContainer.scrollLeft <= 0) {
+                scrollContainer.scrollLeft = scrollContainer.scrollWidth / 2; // Reset to loop
             }
         };
 
         const interval = setInterval(scroll, 20); // Adjust interval for speed
         return () => clearInterval(interval); // Cleanup
     }, []);
+
     
   return (
     <div className="exploreMenu_conatiner">
@@ -99,7 +99,7 @@ const ExploreMenu = () => {
             {arr.map((data, idx) => (
                 <div className="img_name" key={idx}>
                     <img src={data.image} alt="food_img" />
-                    <p>{data.name}</p>
+                    <p className="food_name">{data.name}</p>
                 </div>
             ))}
             {/* Duplicate the images for seamless scrolling */}
