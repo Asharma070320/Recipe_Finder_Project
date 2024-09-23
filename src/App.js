@@ -5,6 +5,7 @@ import Layout from './components/Layout'
 import Home from './Pages/Home'
 import Signup from './Pages/Signup'
 import Cart from './Pages/Cart'
+import Login from './Pages/Login'
 
 const App = () => {
   const routes = createBrowserRouter([
@@ -20,6 +21,10 @@ const App = () => {
         {
           path:'/signup',
           element:<Signup />
+        },
+        {
+          path:'/login',
+          element:<Login />
         },
         {
           path:'/cart',

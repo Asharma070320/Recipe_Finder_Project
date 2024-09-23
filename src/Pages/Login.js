@@ -1,25 +1,31 @@
 import React from 'react'
-import './Signup.css'
+import './Login.css'
 import { useNavigate } from 'react-router-dom'
 
-const Signup = () => {
-  const navi = useNavigate();
+const Login = () => {
+    const navi = useNavigate();
   return (
-    /* From Uiverse.io by akshat-patel28 */ 
-    <div className="signup_container">
-      <div class="form-container">
-      <p class="signup_title">Sign Up</p>
+    <div className="login_container">
+      <div class="login_form-container">
+      <p class="login_title">Login</p>
       <form class="form">
-        <input type="name" class="input" placeholder="Enter your name" />
         <input type="email" class="input" placeholder="Email" />
         <input type="password" class="input" placeholder="Password" />
+
+        
+
         <p class="page-link">
+
+        <div className='set_show_pass'>
+        <div className='set_checkbox'><input type="checkbox"  /> <span>Show Password</span></div>
           <span class="page-link-label">Forgot Password?</span>
+            </div>
+            
         </p>
-        <button class="form-btn">Sign Up</button>
+        <button class="form-btn">Login</button>
       </form>
       <p class="sign-up-label">
-        Don't have an account?<span onClick={()=> navi('/login')} class="sign-up-link">Login</span>
+        Create an account?<span onClick={() => navi('/signup')} class="sign-up-link">Sign Up</span>
       </p>
       <div class="buttons-container">
         {/* <div class="apple-login-button">
@@ -48,4 +54,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default Login

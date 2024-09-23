@@ -1,13 +1,12 @@
-/* From Uiverse.io by akshat-patel28 */ 
-.signup_container{
+.login_container{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.form-container {
+.login_form-container {
     width: 350px;
-    height: 420px;
+    height: 380px;
     margin-top: 1.5rem;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -17,11 +16,11 @@
      border: 2px solid;
   }
   
-  .signup_title {
+  .login_title {
     text-align: center;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
           "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    margin: 10px 0 20px 0;
+    margin: 20px 0 20px 0;
     font-size: 28px;
     font-weight: 800;
   }
@@ -57,6 +56,7 @@
           "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 9px;
     font-weight: 700;
+    text-decoration: none;
   }
   
   .page-link-label:hover {
@@ -140,4 +140,25 @@
       .google-icon {
     font-size: 18px;
     margin-bottom: 1px;
+  }
+
+  .set_show_pass{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+  .set_checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+  .set_show_pass span{
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    text-decoration: none;
   }
