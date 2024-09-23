@@ -19,7 +19,7 @@ const Signup = () => {
         <button class="form-btn">Sign Up</button>
       </form>
       <p class="sign-up-label">
-        Don't have an account?<span onClick={()=> navi('/login')} class="sign-up-link">Login</span>
+      Already Registered?<span onClick={()=> navi('/login')} class="sign-up-link">Login</span>
       </p>
       <div class="buttons-container">
         {/* <div class="apple-login-button">
