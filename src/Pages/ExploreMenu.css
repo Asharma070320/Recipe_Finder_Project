@@ -8,6 +8,10 @@
     width: 80%;
     /* border: 2px solid; */
 }
+.mini_explore h1{
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 .mini_explore .text{
     margin-top: 18px;
     color: rgb(128,128,128);
@@ -25,6 +29,7 @@
     overflow-y: hidden; /* Prevent vertical scrolling */
     position: relative;
     /* border: 2px solid; */
+    z-index: -999;
 }
 .images::-webkit-scrollbar {
     display: none; /* Hide scrollbar */

@@ -10,7 +10,7 @@ const Image = () => {
         he app becomes a convenient one-stop-shop for users,  allowing 
       </p> <p>them to
       order all sorts of items, food or otherwise</p> <br />
-      <button className="view_btn">View Menu</button>
+      <button id='#menu' className="view_btn">View Menu</button>
     </div>
   </div>
   )
