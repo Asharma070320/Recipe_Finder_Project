@@ -20,9 +20,15 @@ const Dishes = () => {
 
   useEffect(() => {
     api();
-  }, []);
+  }, [dish]);
 
   console.log(receipes);
+
+const searchFoodBtn = () => {
+    setDish(value)
+}
+console.log(dish,value);
+
 
   return (
     <>
@@ -30,8 +36,8 @@ const Dishes = () => {
         <div className="mini_container">
           <h1>Select Dishes What You Want To Eat</h1>
           <div className="inp_search">
-            <input class="input" placeholder="Search your favourite dishes" />
-            <button>Search</button>
+            <input class="input" onChange={(e) => setValue(e.target.value)} placeholder="Search your favourite dishes" />
+            <button onClick={searchFoodBtn}>Search</button>
           </div>
         </div>
       </div>
