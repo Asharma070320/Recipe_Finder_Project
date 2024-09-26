@@ -2,6 +2,7 @@ import React from 'react'
 import Image from './Image'
 import ExploreMenu from './ExploreMenu'
 import Dishes from './Dishes'
+import MobileApp from './MobileApp'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Image />
       <ExploreMenu />
       <Dishes />
+      <MobileApp />
     </div>
   )
 }
