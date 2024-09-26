@@ -41,8 +41,10 @@ const Details = () => {
         <section className="right">
         <h2>{recipe.title}</h2>
             <p>Provided by: {recipe.publisher}</p>
-            <h2>Ingredients</h2>
-            <h5>{recipe.ingredients}</h5>
+            <h3>Ingredients :-<h5>{recipe.ingredients}</h5></h3>
+            
+            {/* <button>Add to cart</button> */}
+            <p>Add To Cart button</p>
         </section>
       </div>
     </>

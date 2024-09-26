@@ -20,7 +20,8 @@
     /* border: 2px solid red; */
 }
 .left img{
-    width: 450px;
+    width:85%;
+    height: 100%;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -31,3 +32,46 @@
     justify-content: space-evenly;
     /* border: 2px solid purple; */
 }
+
+@media screen and (max-width:990px) {
+    .right h2{
+        font-size: 1.1rem;
+    }
+    .right p{
+        font-size: 0.9rem;
+    }
+    .right h5{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .right h2{
+        font-size: 1rem;
+    }
+    .right p{
+        font-size: 0.7rem;
+    }
+    .right h3{
+        font-size: 1rem;
+    }
+    .right h5{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width:552px) {
+    .right h2{
+        font-size: 0.8rem;
+    }
+    .right p{
+        font-size: 0.6rem;
+    }
+    .right h3{
+        font-size: 0.8rem;
+    }
+    .right h5{
+        font-size: 0.4rem;
+    }
+}
+
