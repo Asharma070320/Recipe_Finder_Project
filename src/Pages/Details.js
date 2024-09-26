@@ -27,7 +27,15 @@ const Details = () => {
       console.log(error);
     }
   };
-  console.log(recipe);
+//   console.log(recipe);
+
+const[arr,setArr] = useState([])
+const addToCart = (list) => {
+    const update = [...arr,{list}];
+    setArr(update)
+}
+console.log(arr);
+
 
   return (
     <>
@@ -48,8 +56,8 @@ const Details = () => {
           <h3>
             Ingredients :-<h5>{recipe.ingredients}</h5>
           </h3>
-          
-          <button class="cart_button">
+{/*           
+          <button onClick={()=> addToCart(recipe)} class="cart_button">
             <span>Add to cart</span>
             <svg
               fill="#fff"
@@ -85,7 +93,7 @@ const Details = () => {
                 </g>{" "}
               </g>
             </svg>
-          </button>
+          </button> */}
         </section>
       </div>
     </>

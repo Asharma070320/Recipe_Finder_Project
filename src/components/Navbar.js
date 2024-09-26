@@ -23,7 +23,7 @@ const Navbar = () => {
         </a>
       </ul>
       <div className="signUp">
-        <i onClick={() => navi('/cart')} className="ri-shopping-cart-line icon"></i>
+        {/* <i onClick={() => navi('/cart')} className="ri-shopping-cart-line icon"></i> */}
         <button onClick={() => navi('/signup')} className="signup_btn">Sign Up</button>
       </div>  
     </div>
