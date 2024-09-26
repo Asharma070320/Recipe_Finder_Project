@@ -14,6 +14,7 @@
 }
 .left{
     width: 50%;
+    height: 65vh;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -33,7 +34,58 @@
     /* border: 2px solid purple; */
 }
 
+
+
+/* From Uiverse.io by Df12345677 */ 
+.cart_button {
+    height: 60px;
+    width: 200px;
+    background-color: #132233;
+    border: 2px solid rgb(182, 128, 128);
+    color: #eee;
+    transition: .6s;
+    font-size: 15px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    overflow: hidden;
+    box-shadow: none;
+  }
+  
+  .cart_button span {
+    transform: translateX(10px);
+    transition: .5s;
+  }
+  
+  .cart_button svg {
+    transform: translateX(-300px);
+    transition: .6s;
+    z-index: 3;
+    height: 20px;
+  }
+  
+  .cart_button:hover {
+    width: 60px;
+    background-color: rgba(51, 34, 51, 0.815);
+    box-shadow: 20px 20px 96px #bebebe,-20px -20px 96px #ffffff;
+  }
+  
+  .cart_button:hover svg {
+    transform: translateX(-5px);
+  }
+  
+  .cart_button:hover span {
+    transform: translateY(70px);
+    font-size: .1rem;
+  }
+
 @media screen and (max-width:990px) {
+    .left{
+        width: 60%;
+        height: 55vh;
+    }
     .right h2{
         font-size: 1.1rem;
     }
@@ -47,25 +99,28 @@
 
 @media screen and (max-width:768px) {
     .right h2{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .right p{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .right h3{
         font-size: 1rem;
     }
     .right h5{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 }
 
 @media screen and (max-width:552px) {
+    .left{
+        height: 50vh;
+    }
     .right h2{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .right p{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     .right h3{
         font-size: 0.8rem;
