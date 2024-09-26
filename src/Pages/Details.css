@@ -38,10 +38,10 @@
 
 /* From Uiverse.io by Df12345677 */ 
 .cart_button {
-    height: 60px;
-    width: 200px;
-    background-color: #132233;
-    border: 2px solid rgb(182, 128, 128);
+    height: 45px;
+    width: 150px;
+    background-color: #6C5CE7;
+    border: 2px solid rgb(0, 0, 0);
     color: #eee;
     transition: .6s;
     font-size: 15px;
@@ -67,8 +67,9 @@
   }
   
   .cart_button:hover {
-    width: 60px;
-    background-color: rgba(51, 34, 51, 0.815);
+    height: 45px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.815);
     box-shadow: 20px 20px 96px #bebebe,-20px -20px 96px #ffffff;
   }
   
@@ -84,7 +85,10 @@
 @media screen and (max-width:990px) {
     .left{
         width: 60%;
-        height: 55vh;
+        height: 65vh;
+    }
+    .right{
+        gap: 0.5rem;
     }
     .right h2{
         font-size: 1.1rem;
@@ -95,6 +99,14 @@
     .right h5{
         font-size: 0.8rem;
     }
+    .cart_button{
+        height: 40px;
+        width: 150px;
+    }
+    .cart_button:hover {
+        height: 40px;
+        width: 150px;
+      }
 }
 
 @media screen and (max-width:768px) {
@@ -110,6 +122,16 @@
     .right h5{
         font-size: 0.7rem;
     }
+    .cart_button{
+        height: 35px;
+        width: 125px;
+        font-size: 11px;
+    }
+    .cart_button:hover {
+        height: 35px;
+        width: 125px;
+        font-size: 11px;
+      }
 }
 
 @media screen and (max-width:552px) {
@@ -126,7 +148,17 @@
         font-size: 0.8rem;
     }
     .right h5{
-        font-size: 0.4rem;
+        font-size: 0.35rem;
     }
+    .cart_button{
+        height: 30px;
+        width: 115px;
+        font-size: 9px;
+    }
+    .cart_button:hover {
+        height: 30px;
+        width: 115px;
+        font-size: 9px;
+      }
 }
 
