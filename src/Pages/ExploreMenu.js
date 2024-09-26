@@ -68,7 +68,7 @@ const ExploreMenu = () => {
 
     const scrollRef = useRef(null);
 
-    useEffect(() => {
+     useEffect(() => {
         const scrollContainer = scrollRef.current;
         let scrollAmount = 0;
 
@@ -83,6 +83,9 @@ const ExploreMenu = () => {
         return () => clearInterval(interval); // Cleanup
     }, []);
 
+    const sendNameBtn = (name) => {
+        console.log(name);  
+    }
     
   return (
     <div className="exploreMenu_conatiner">
@@ -97,14 +100,14 @@ const ExploreMenu = () => {
         </div>
         <div className="images" ref={scrollRef}>
             {arr.map((data, idx) => (
-                <div className="img_name" key={idx}>
-                    <img src={data.image} alt="food_img" />
+                <div onClick={() => sendNameBtn(data)} className="img_name" key={idx}>
+                    <img  src={data.image} alt="food_img" />
                     <p className="food_name">{data.name}</p>
                 </div>
             ))}
             {/* Duplicate the images for seamless scrolling */}
             {arr.map((data, idx) => (
-                <div className="img_name" key={`duplicate-${idx}`}>
+                <div  onClick={() => sendNameBtn(data)} className="img_name" key={`duplicate-${idx}`}>
                     <img src={data.image} alt="food_img" />
                     <p>{data.name}</p>
                 </div>

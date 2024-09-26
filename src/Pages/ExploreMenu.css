@@ -30,6 +30,7 @@
     position: relative;
     /* border: 2px solid; */
     z-index: -999;
+    
 }
 .images::-webkit-scrollbar {
     display: none; /* Hide scrollbar */
@@ -46,7 +47,7 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .food_name{

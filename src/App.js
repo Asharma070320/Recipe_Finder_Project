@@ -6,6 +6,7 @@ import Home from './Pages/Home'
 import Signup from './Pages/Signup'
 import Cart from './Pages/Cart'
 import Login from './Pages/Login'
+import Details from './Pages/Details'
 
 const App = () => {
   const routes = createBrowserRouter([
@@ -29,6 +30,9 @@ const App = () => {
         {
           path:'/cart',
           element:<Cart />
+        },{
+          path: "/details/:recipeId",
+          element: <Details />
         }
       ]
     }

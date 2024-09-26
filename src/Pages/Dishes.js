@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Dishes.css";
 import axios from "axios";
+import { Link, useNavigate } from 'react-router-dom';
 
 const Dishes = () => {
   const [value, setValue] = useState("");
@@ -22,12 +23,18 @@ const Dishes = () => {
     api();
   }, [dish]);
 
-  console.log(receipes);
+//   console.log(receipes);
 
 const searchFoodBtn = () => {
     setDish(value)
 }
-console.log(dish,value);
+// console.log(dish,value);
+
+const navi = useNavigate();
+
+const detailsBtn = (value) => {
+    navi(`/details/${value}`)
+}
 
 
   return (
@@ -52,7 +59,9 @@ console.log(dish,value);
                 <div className="lower">
                   <h4>{data.title}</h4>
                   <span>{data.publisher}</span> 
-                  <button class="details_btn">
+                  <div></div> <div></div>
+                  
+                  <button onClick={()=> detailsBtn(data.recipe_id)} class="details_btn">
                     <p class="text">Deatils</p>
                   </button>
                 </div>
